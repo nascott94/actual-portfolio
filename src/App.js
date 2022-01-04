@@ -1,10 +1,21 @@
-import React from "react";
-import { NavMenu } from "./components/NavMenu";
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import NavMenu from './components/NavMenu';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
 
 function App() {
   return (
     <>
-      <NavMenu />
+      <Router>
+        <NavMenu />
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+      </Router>
     </>
   );
 }
