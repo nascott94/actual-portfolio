@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
@@ -11,14 +11,12 @@ const NavMenuStyles = styled.div`
   width: 100%;
   padding: 1rem 0;
   background: var(--dark-bg);
-
   ul {
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
     text-align: center;
   }
-
   li {
     display: inline-block;
     border-radius: 8px;
@@ -27,7 +25,6 @@ const NavMenuStyles = styled.div`
       background-color: var(--deep-dark);
     }
   }
-
   a {
     display: inline-block;
     font-family: 'RobotoMono Regular';
@@ -36,7 +33,6 @@ const NavMenuStyles = styled.div`
     color: var(--gray-1);
     outline: none;
   }
-
   .active {
     color: var(--white);
   }
@@ -48,12 +44,19 @@ const NavMenuStyles = styled.div`
     cursor: pointer;
     display: none;
     outline: none;
+    * {
+      pointer-events: none;
+    }
   }
-  .closeNavIcon {
+  .navItems .closeNavIcon {
     display: none;
   }
 
   @media only screen and (max-width: 768px) {
+    padding: 0;
+    .hide-item {
+      transform: translateY(calc(-100% - var(--top)));
+    }
     .mobile-menu-icon {
       display: block;
     }
@@ -85,28 +88,73 @@ const NavMenuStyles = styled.div`
   }
 `;
 export default function NavMenu() {
+  const [showNav, setShowNav] = useState(false);
+
   return (
     <NavMenuStyles>
-      <div className="mobile-menu-icon">
+      <div
+        className="mobile-menu-icon"
+        onClick={() => setShowNav(!showNav)}
+        role="button"
+        onKeyDown={() => setShowNav(!showNav)}
+        tabIndex={0}
+      >
         <MdMenu />
       </div>
-      <ul className="navItems">
-        <div className="closeNavIcon">
+      <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
+        <div
+          className="closeNavIcon"
+          onClick={() => setShowNav(!showNav)}
+          role="button"
+          onKeyDown={() => setShowNav(!showNav)}
+          tabIndex={0}
+        >
           <MdClose />
         </div>
         <li>
-          <NavLink to="/" exact>
+          <NavLink
+            to="/"
+            exact
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink
+            to="/about"
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            About
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/projects">Projects</NavLink>
+          <NavLink
+            to="/projects"
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Projects
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink
+            to="/contact"
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Contact
+          </NavLink>
         </li>
       </ul>
     </NavMenuStyles>
