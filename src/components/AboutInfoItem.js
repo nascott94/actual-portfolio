@@ -7,6 +7,7 @@ const AboutItemStyles = styled.div`
   align-items: center;
   justify-content: flex-start;
   position: relative;
+  /* gap: 5rem; */
   margin-top: 3rem;
   .title {
     font-size: 2.4rem;
@@ -36,15 +37,14 @@ const AboutItemStyles = styled.div`
   }
 `;
 
-export default function AboutInfoItem(
+export default function AboutInfoItem({
   title = 'Title',
-  items = ['HTML', 'CSS']
-) {
+  items = ['HTML', 'CSS'],
+}) {
   return (
     <AboutItemStyles>
       <h1 className="title">{title}</h1>
       <div className="items">
-        {' '}
         {items.map((item, index) => (
           <div className="item" key={index}>
             <PText>{item}</PText>

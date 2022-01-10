@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import PText from '../components/PText';
 import Button from '../components/Button';
 import AboutImg from '../assets/images/olive.jpeg';
+import AboutInfoItem from '../components/AboutInfoItem';
+import ContactBanner from '../components/ContactBanner';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -108,9 +110,33 @@ export default function About() {
         <div className="about__info__items">
           <div className="about__info__item">
             <h1 className="about__info__heading">Education</h1>
+            <AboutInfoItem title="College" items={['Furman University']} />
+            <AboutInfoItem
+              title="Coding Boot Camp"
+              items={['Denver University']}
+            />
+          </div>
+          <div className="about__info__item">
+            <h1 className="about__info__heading">Skills</h1>
+            <AboutInfoItem
+              title="FrontEnd"
+              items={['HTML', 'CSS', 'JavaScript', 'React']}
+            />
+            <AboutInfoItem title="BackEnd" items={['Node', 'Express', 'SQL']} />
+            <AboutInfoItem
+              title="Design"
+              items={[
+                'Adobe Photoshop',
+                'Illustator',
+                'SketchUp',
+                'Revit',
+                'VRAY',
+              ]}
+            />
           </div>
         </div>
       </div>
+      <ContactBanner />
     </AboutPageStyles>
   );
 }
