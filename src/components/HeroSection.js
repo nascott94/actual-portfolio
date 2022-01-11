@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import HeroImg from '../assets/images/olive.jpeg';
 import Button from './Button';
 import PText from './PText';
-import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
+import SocialMediaArrow from '../assets/images/updated-social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 
 const HeroStyles = styled.div`
@@ -32,11 +32,11 @@ const HeroStyles = styled.div`
     }
   }
   .hero__img {
-    max-width: 900px;
+    max-width: 750px;
     width: 100%;
     height: 600px;
     margin: 0 auto;
-    border: 2px solid var (--gray-1);
+    border: 2px solid var(--gray-1);
   }
   .hero__info {
     margin-top: -18rem;
