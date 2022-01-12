@@ -24,10 +24,17 @@ import LightBlueShape from '../assets/images/lightblue.png';
 const ShapeContainer = styled.div`
   .dark_blue {
     position: absolute;
-    top: 80px;
-    left: 0;
-    width: 1000px;
-    height: 1000px;
+    top: 10px;
+    left: -50px;
+    width: 650px;
+    height: 650px;
+  }
+  .light_blue {
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    width: 400px;
+    height: 400px;
   }
 `;
 
@@ -36,7 +43,7 @@ export default function Home() {
     <div>
       <ShapeContainer>
         <img className="dark_blue" src={DarkBlueShape} alt="shape" />
-        {/* <img className="light_blue" src={LightBlueShape} alt="shape" /> */}
+        <img className="light_blue" src={LightBlueShape} alt="shape" />
       </ShapeContainer>
       <HeroSection />
       <AboutSection />
