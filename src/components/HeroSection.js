@@ -5,6 +5,7 @@ import Button from './Button';
 import PText from './PText';
 import SocialMediaArrow from '../assets/images/updated-social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
+// import DarkBlueShape from '../assets/images/darkblue.png';
 
 const HeroStyles = styled.div`
   .hero {
@@ -17,6 +18,7 @@ const HeroStyles = styled.div`
     justify-content: center;
     position: relative;
   }
+
   .hero__heading {
     font-size: 2rem;
     margin-bottom: -4rem;
@@ -169,7 +171,7 @@ export default function HeroSection() {
           <div className="hero__social">
             <div className=".hero__social__indicator">
               <p>Follow</p>
-              <img src={SocialMediaArrow} alt="icon" />
+              <img className="pulsate-fwd" src={SocialMediaArrow} alt="icon" />
             </div>
             <div className="hero__social__text">
               <ul>
@@ -214,7 +216,11 @@ export default function HeroSection() {
           </div>
           <div className="hero__scrollDown">
             <p>Scroll</p>
-            <img src={ScrollDownArrow} alt="ScrollDownArrow" />
+            <img
+              className="pulsate-fwd"
+              src={ScrollDownArrow}
+              alt="ScrollDownArrow"
+            />
           </div>
         </div>
       </div>
