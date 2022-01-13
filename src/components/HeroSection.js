@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/olive.jpeg';
+import HeroImg from '../assets/images/oliveshapes 1000.png';
 import Button from './Button';
 import PText from './PText';
 import SocialMediaArrow from '../assets/images/updated-social-media-arrow.svg';
@@ -21,7 +21,7 @@ const HeroStyles = styled.div`
 
   .hero__heading {
     font-size: 2rem;
-    margin-bottom: -4rem;
+    margin-bottom: -11rem;
     position: relative;
     span {
       display: inline-block;
@@ -36,9 +36,9 @@ const HeroStyles = styled.div`
   .hero__img {
     max-width: 750px;
     width: 100%;
-    height: 600px;
+    height: 800px;
     margin: 0 auto;
-    border: 2px solid var(--gray-1);
+    /* border: 2px solid var(--gray-1); */
   }
   .hero__info {
     margin-top: -18rem;
@@ -162,10 +162,10 @@ export default function HeroSection() {
             <img src={HeroImg} alt="olive+me" />
           </div>
           <div className="hero__info">
-            <PText>
+            {/* <PText>
               I am working as a freelance web developer for the last year. I
               have a background in architecture and love good design.
-            </PText>
+            </PText> */}
             <Button btnText="see my works" btnLink="/projects" />
           </div>
           <div className="hero__social">
