@@ -2,10 +2,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const ColStyle = styled.div``;
+const ColStyle = styled.div`
+  .heading {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  li {
+    margin-bottom: 0.5rem;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+`;
 
 export default function FooterCol({
-  heading = 'Col Heading',
   links = [
     { type: 'Link', title: 'Home', path: '/Home' },
     { type: 'Link', title: 'About', path: '/about' },
@@ -13,7 +23,6 @@ export default function FooterCol({
 }) {
   return (
     <ColStyle>
-      <h2 className="heading">{heading}</h2>
       <ul>
         {links.map((item, index) => (
           <li key={index}>

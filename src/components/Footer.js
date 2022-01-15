@@ -4,7 +4,7 @@ import PText from './PText';
 import FooterCol from './FooterCol';
 
 const FooterStyle = styled.div`
-  background-color: var(--deep-dark);
+  background-color: #d9eaf4;
   padding-top: 10rem;
   .container {
     display: flex;
@@ -42,11 +42,11 @@ export default function Footer() {
       <div className="container">
         <div className="footer__col1">
           <div className="footer__col1__title">Natalie Scott</div>
-          <PText>joji joji joji</PText>
+          <PText>Web Development</PText>
         </div>
         <div className="footer__col2">
           <FooterCol
-            heading="Important Links"
+            heading="Links"
             links={[
               {
                 title: 'Home',
@@ -92,19 +92,15 @@ export default function Footer() {
         </div>
         <div className="footer__col4">
           <FooterCol
-            heading="social Links"
+            heading="Social Links"
             links={[
               {
-                title: 'Facebook',
-                path: 'http://facebook.com',
+                title: 'LinkedIn',
+                path: 'www.linkedin.com/in/natalie-scott94',
               },
               {
-                title: 'Twitter',
-                path: 'http://twitter.com',
-              },
-              {
-                title: 'Instagram',
-                path: 'http://instagram.com',
+                title: 'GitHub',
+                path: 'https://github.com/nascott94',
               },
             ]}
           />

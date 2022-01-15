@@ -166,7 +166,11 @@ export default function HeroSection() {
               I am working as a freelance web developer for the last year. I
               have a background in architecture and love good design.
             </PText> */}
-            <Button btnText="see my works" btnLink="/projects" />
+            <Button
+              className="pulsate-fwd"
+              btnText="see my works"
+              btnLink="/projects"
+            />
           </div>
           <div className="hero__social">
             <div className=".hero__social__indicator">
