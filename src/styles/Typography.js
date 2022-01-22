@@ -19,6 +19,10 @@ const Typography = createGlobalStyle`
     src: url(${MontserratBold});
     font-style: normal;
   }
+
+  
+
+  
   html{
     font-family: 'RobotoMono Regular';
     color: var(--gray-1);
