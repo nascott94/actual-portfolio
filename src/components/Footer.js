@@ -6,6 +6,8 @@ import FooterCol from './FooterCol';
 const FooterStyle = styled.div`
   background-color: #d9eaf4;
   padding-top: 10rem;
+  padding-bottom: 5rem;
+
   .container {
     display: flex;
     gap: 3rem;
@@ -21,6 +23,7 @@ const FooterStyle = styled.div`
   .footer__col1__title {
     font-size: 3.5rem;
     margin-bottom: 1rem;
+    padding-right: 5rem;
   }
   @media only screen and (max-width: 768px) {
     .container {
@@ -96,7 +99,7 @@ export default function Footer() {
             links={[
               {
                 title: 'LinkedIn',
-                path: 'www.linkedin.com/in/natalie-scott94',
+                path: 'https://www.linkedin.com/in/natalie-scott94/',
               },
               {
                 title: 'GitHub',

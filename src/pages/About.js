@@ -85,20 +85,13 @@ export default function About() {
             <h2 className="about__heading"> I am a freelance Web Developer</h2>
             <div className="about__info">
               <PText>
-                I am currently located in Denver, Colorado. I am currently
-                located in Denver, Colorado.I am currently located in Denver,
-                Colorado.I am currently located in Denver, Colorado. I am
-                currently located in Denver, Colorado. I am currently located in
-                Denver, Colorado.I am currently located in Denver, Colorado.
-                <br /> <br />I am currently located in Denver, Colorado. I am
-                currently located in Denver, Colorado.I am currently located in
-                Denver, Colorado.I am currently located in Denver, Colorado. I
-                am currently located in Denver, Colorado. I am currently located
-                in Denver, Colorado.I am currently located in Denver, Colorado.
-                <br />
-                <br />I am currently located in Denver, Colorado. I am currently
-                located in Denver, Colorado. I am currently located in Denver,
-                Colorado.I am currently located in Denver, Colorado.
+                I am currently located in Denver, Colorado. I am energetic and
+                motivated Web Developer with a have a background in
+                architectural design. I thrive in a team environment, working to
+                get projects done in an efficient manner. Outside the office I
+                could be found cooking recipes I have no business tackling,
+                taking my dog Olive on a hike and dreaming of owning an old
+                fixer-upper.
               </PText>
             </div>
             <Button btnText="Download Resume" btnLink="#" />

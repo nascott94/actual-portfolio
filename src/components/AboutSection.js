@@ -80,10 +80,12 @@ export default function AboutSection() {
             heading="About Me"
           />
           <PText>
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+            Hi, I'm Natalie! I am energetic and motivated Web Developer with a
+            have a background in architectural design. I thrive in a team
+            environment, working to get projects done in an efficient manner.
+            Outside the office I could be found cooking recipes I have no
+            business tackling, taking my dog Olive on a hike and dreaming of
+            owning an old fixer-upper.
           </PText>
           <div className="aboutSection__buttons">
             <Button btnText="Works" btnLink="/projects" />
