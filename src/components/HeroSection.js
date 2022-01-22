@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import HeroImg from '../assets/images/oliveshapes 1000.png';
 import Button from './Button';
-import PText from './PText';
 import SocialMediaArrow from '../assets/images/updated-social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 // import DarkBlueShape from '../assets/images/darkblue.png';
@@ -154,30 +153,22 @@ export default function HeroSection() {
     <HeroStyles>
       <div className="hero">
         <div className="container">
-          <h1 className="hero__heading">
+          <h1 className="hero__heading slide-in-top">
             <span>Welcome, my name is </span>
-            <span className="hero__name">Natalie Scott </span>
+            <span className="hero__name slide-in-top">Natalie Scott </span>
           </h1>
           <div className="hero__img">
             <img src={HeroImg} alt="olive+me" />
           </div>
-          <div className="hero__info">
-            {/* <PText>
-              I am working as a freelance web developer for the last year. I
-              have a background in architecture and love good design.
-            </PText> */}
-            <Button
-              className="pulsate-fwd"
-              btnText="see my works"
-              btnLink="/projects"
-            />
+          <div className="hero__info pulsate-fwd">
+            <Button btnText="see my works" btnLink="/projects" />
           </div>
           <div className="hero__social">
-            <div className=".hero__social__indicator">
+            <div className=".hero__social__indicator slide-in-top">
               <p>Follow</p>
               <img className="pulsate-fwd" src={SocialMediaArrow} alt="icon" />
             </div>
-            <div className="hero__social__text">
+            <div className="hero__social__text slide-in-top">
               <ul>
                 <li>
                   <a
@@ -218,7 +209,7 @@ export default function HeroSection() {
               </ul>
             </div>
           </div>
-          <div className="hero__scrollDown">
+          <div className="hero__scrollDown slide-in-top">
             <p>Scroll</p>
             <img
               className="pulsate-fwd"

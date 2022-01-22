@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
-import AboutImg from '../assets/images/olive.jpeg';
+import AboutImg from '../assets/images/chaffeehouse.png';
 import SectionTitle from './SectionTitle';
 
 const AboutSectionStyles = styled.div`
@@ -78,6 +78,7 @@ export default function AboutSection() {
           <SectionTitle
             subheading="Let me introduce myself"
             heading="About Me"
+            className="pulsate-fwd"
           />
           <PText>
             Hi, I'm Natalie! I am energetic and motivated Web Developer with a
@@ -87,7 +88,7 @@ export default function AboutSection() {
             business tackling, taking my dog Olive on a hike and dreaming of
             owning an old fixer-upper.
           </PText>
-          <div className="aboutSection__buttons">
+          <div className="aboutSection__buttons pulsate-fwd">
             <Button btnText="Works" btnLink="/projects" />
             <Button btnText="Read More" btnLink="/about" />
           </div>
