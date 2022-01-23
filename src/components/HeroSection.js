@@ -4,7 +4,6 @@ import HeroImg from '../assets/images/oliveshapes 1000.png';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/updated-social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
-// import DarkBlueShape from '../assets/images/darkblue.png';
 
 const HeroStyles = styled.div`
   .hero {
@@ -37,7 +36,6 @@ const HeroStyles = styled.div`
     width: 100%;
     height: 800px;
     margin: 0 auto;
-    /* border: 2px solid var(--gray-1); */
   }
   .hero__info {
     margin-top: -18rem;
@@ -172,38 +170,20 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="http://facebook.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    FB
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://twitter.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    TW
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://instagram.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    IG
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://webcifar.com"
+                    href="https://www.linkedin.com/in/natalie-scott94/"
                     target="_blank"
                     rel="noreferrer"
                   >
                     LI
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/nascott94"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GH
                   </a>
                 </li>
               </ul>
