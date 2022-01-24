@@ -112,13 +112,12 @@ export default function About() {
             </h2>
             <div className="about__info" style={{ paddingBottom: 20 }}>
               <PText>
-                I am currently located in Denver, Colorado. I am energetic and
-                motivated Web Developer with a have a background in
-                architectural design. I thrive in a team environment, working to
-                get projects done in an efficient manner. Outside the office I
-                could be found cooking recipes I have no business tackling,
-                taking my dog Olive on a hike and dreaming of owning an old
-                fixer-upper.
+                I am energetic and motivated Web Developer with a have a
+                background in architectural design. I thrive in a team
+                environment, working to get projects done in an efficient
+                manner. Outside the office I could be found cooking recipes I
+                have no business tackling, taking my dog Olive on a hike and
+                dreaming of owning an old fixer-upper.
               </PText>
             </div>
             <div className="slide-in-top">

@@ -32,14 +32,14 @@ const projects = [
     name: 'SimpleWebsite',
     desc: 'A simple website for an agency using a template.',
     img: SimpleSite,
-    link: 'https://dan-nat-sample.netlify.app/presentation',
+    link: 'https://dan-nat-sample.netlify.app',
   },
   {
     id: uuidv4(),
     name: 'Covid Testing',
-    desc: 'A site made for a covid tesing business, still in the design and system building process.',
+    desc: 'A site made for a covid tesing business, made using React and NextJs.',
     img: CovidTesting,
-    link: 'https://warehouse-manager-nw.herokuapp.com/',
+    link: 'https://covidsitedanandnat.netlify.app',
   },
 ];
 
