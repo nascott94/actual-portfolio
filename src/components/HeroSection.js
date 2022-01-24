@@ -159,7 +159,7 @@ export default function HeroSection() {
             <img src={HeroImg} alt="olive+me" />
           </div>
           <div className="hero__info pulsate-fwd">
-            <Button btnText="see my works" btnLink="/projects" />
+            <Button btnText="see my projects" btnLink="/projects" />
           </div>
           <div className="hero__social">
             <div className=".hero__social__indicator slide-in-top">

@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import Button from '../components/Button';
 import AboutImg from '../assets/images/olive.jpeg';
 import AboutInfoItem from '../components/AboutInfoItem';
-import ContactBanner from '../components/ContactBanner';
+// import Button from '../components/Button';
+// import ContactBanner from '../components/ContactBanner';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -36,6 +36,7 @@ const AboutPageStyles = styled.div`
   }
   .about_info {
     margin-bottom: 4rem;
+
     .para {
       max-width: 100%;
     }
@@ -55,6 +56,15 @@ const AboutPageStyles = styled.div`
     font-size: 3.6rem;
     text-transform: uppercase;
   }
+  .resume_button {
+    font-size: 2.2rem;
+    background-color: var(--gray-1);
+    padding: 0.7rem 2rem;
+    border: 2px solid var(--gray-1);
+    border-radius: 8px;
+    display: inline-block;
+    color: white;
+  }
   @media only screen and (max-width: 768px) {
     padding: 10rem 0;
     .top-section {
@@ -70,6 +80,9 @@ const AboutPageStyles = styled.div`
     .about__info__heading {
       font-size: 3rem;
     }
+    .resume_button {
+      font-size: 1.8rem;
+    }
   }
 `;
 
@@ -79,11 +92,13 @@ export default function About() {
       <div className="container">
         <div className="top-section">
           <div className="left">
-            <p className="about__subheading">
+            <p className="about__subheading slide-in-top">
               Hello, my name is <span>Natalie Scott</span>
             </p>
-            <h2 className="about__heading"> I am a freelance Web Developer</h2>
-            <div className="about__info">
+            <h2 className="about__heading slide-in-top">
+              I am a freelance Web Developer
+            </h2>
+            <div className="about__info" style={{ paddingBottom: 20 }}>
               <PText>
                 I am currently located in Denver, Colorado. I am energetic and
                 motivated Web Developer with a have a background in
@@ -94,7 +109,15 @@ export default function About() {
                 fixer-upper.
               </PText>
             </div>
-            <Button btnText="Download Resume" btnLink="#" />
+            <div className="slide-in-top">
+              <a
+                className="resume_button"
+                href="https://drive.google.com/file/d/1O81rkpUgLkD-vsWTrYard7_sdMJLZaRH/view?usp=sharing"
+                target="https://drive.google.com/file/d/1O81rkpUgLkD-vsWTrYard7_sdMJLZaRH/view?usp=sharing"
+              >
+                Link to Resume
+              </a>
+            </div>
           </div>
           <div className="right">
             <img src={AboutImg} alt="me" />
@@ -104,10 +127,7 @@ export default function About() {
           <div className="about__info__item">
             <h1 className="about__info__heading">Education</h1>
             <AboutInfoItem title="College" items={['Furman University']} />
-            <AboutInfoItem
-              title="Coding Boot Camp"
-              items={['Denver University']}
-            />
+            <AboutInfoItem title="Coding Camp" items={['Denver University']} />
           </div>
           <div className="about__info__item">
             <h1 className="about__info__heading">Skills</h1>
@@ -118,18 +138,12 @@ export default function About() {
             <AboutInfoItem title="BackEnd" items={['Node', 'Express', 'SQL']} />
             <AboutInfoItem
               title="Design"
-              items={[
-                'Adobe Photoshop',
-                'Illustator',
-                'SketchUp',
-                'Revit',
-                'VRAY',
-              ]}
+              items={['Photoshop', 'SketchUp', 'Revit', 'VRAY']}
             />
           </div>
         </div>
       </div>
-      <ContactBanner />
+      {/* <ContactBanner /> */}
     </AboutPageStyles>
   );
 }

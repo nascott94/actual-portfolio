@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
-import ProjectItem from './ProjectItem';
+import ProjectItemHome from './ProjectItemHome';
 import SectionTitle from './SectionTitle';
 import 'swiper/swiper-bundle.min.css';
 import projects from '../assets/data/projects';
@@ -71,7 +71,7 @@ export default function ProjectsSection() {
               if (index >= 5) return;
               return (
                 <SwiperSlide key={project.id}>
-                  <ProjectItem
+                  <ProjectItemHome
                     title={project.name}
                     img={project.img}
                     desc={project.desc}

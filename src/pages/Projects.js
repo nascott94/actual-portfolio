@@ -68,11 +68,12 @@ export default function Projects() {
     <>
       <ProjectStyle>
         <div className="container">
-          <SectionTitle
-            heading="Projects"
-            subheading="some of my recent projects"
-          />
-
+          <div className="slide-in-top">
+            <SectionTitle
+              heading="Projects"
+              subheading="some of my recent projects"
+            />
+          </div>
           <div className="projects__searchBar">
             <form>
               <input
@@ -91,6 +92,7 @@ export default function Projects() {
                 title={item.name}
                 desc={item.desc}
                 img={item.img}
+                link={item.link}
               />
             ))}
           </div>

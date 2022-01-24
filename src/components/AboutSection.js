@@ -88,8 +88,12 @@ export default function AboutSection() {
             owning an old fixer-upper.
           </PText>
           <div className="aboutSection__buttons">
-            <Button btnText="Works" btnLink="/projects" />
-            <Button btnText="Read More" btnLink="/about" />
+            <div className="pulsate-fwd">
+              <Button btnText="Projects" btnLink="/projects" />
+            </div>
+            <div className="pulsate-bck">
+              <Button btnText="Read More" btnLink="/about" />
+            </div>
           </div>
         </div>
         <div className="aboutSection__right">

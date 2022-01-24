@@ -54,7 +54,11 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ShapeContainer>
-        <img className="dark_blue" src={DarkBlueShape} alt="shape" />
+        <img
+          className="dark_blue pulsate-fwd"
+          src={DarkBlueShape}
+          alt="shape"
+        />
         <img className="outline" src={DripDrop} alt="shape" />
       </ShapeContainer>
       <ProjectsSection />
