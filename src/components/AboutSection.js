@@ -31,6 +31,9 @@ const AboutSectionStyles = styled.div`
     gap: 2rem;
     margin-top: 2rem;
   }
+  .aboutImg {
+    border: 2px solid var(--gray-1);
+  }
   @media only screen and (max-width: 950px) {
     .aboutSection__left {
       flex: 4;

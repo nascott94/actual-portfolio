@@ -1,13 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import AboutImg from '../assets/images/olive.jpeg';
+import AboutImg from '../assets/images/abtimg (1).png';
 import AboutInfoItem from '../components/AboutInfoItem';
+import Wavy from '../assets/images/wavy.png';
 // import Button from '../components/Button';
 // import ContactBanner from '../components/ContactBanner';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
+  .wavy {
+    position: absolute;
+    top: 550px;
+    left: 1250px;
+    width: 400px;
+    height: 400px;
+  }
 
   .top-section {
     display: flex;
@@ -83,6 +91,9 @@ const AboutPageStyles = styled.div`
     .resume_button {
       font-size: 1.8rem;
     }
+    .wavy {
+      display: none;
+    }
   }
 `;
 
@@ -91,6 +102,7 @@ export default function About() {
     <AboutPageStyles>
       <div className="container">
         <div className="top-section">
+          <img className="wavy pulsate-fwd" src={Wavy} alt="shape" />
           <div className="left">
             <p className="about__subheading slide-in-top">
               Hello, my name is <span>Natalie Scott</span>
@@ -111,7 +123,7 @@ export default function About() {
             </div>
             <div className="slide-in-top">
               <a
-                className="resume_button"
+                className="resume_button pulsate-fwd"
                 href="https://drive.google.com/file/d/1O81rkpUgLkD-vsWTrYard7_sdMJLZaRH/view?usp=sharing"
                 target="https://drive.google.com/file/d/1O81rkpUgLkD-vsWTrYard7_sdMJLZaRH/view?usp=sharing"
               >
