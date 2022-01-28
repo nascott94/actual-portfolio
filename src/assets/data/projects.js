@@ -37,7 +37,7 @@ const projects = [
   {
     id: uuidv4(),
     name: 'Covid Testing',
-    desc: 'A site made for a covid tesing business, made using React and NextJs.',
+    desc: 'A site made for a covid testing business, made using React and NextJs.',
     img: CovidTesting,
     link: 'https://covidsitedanandnat.netlify.app',
   },
