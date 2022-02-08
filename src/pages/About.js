@@ -105,26 +105,26 @@ export default function About() {
           <img className="wavy pulsate-fwd" src={Wavy} alt="shape" />
           <div className="left">
             <p className="about__subheading slide-in-top">
-              Hello, my name is <span>Natalie Scott</span>
+              Hi, my name is <span>Natalie Scott</span>
             </p>
             <h2 className="about__heading slide-in-top">
               I am a freelance Web Developer
             </h2>
             <div className="about__info" style={{ paddingBottom: 20 }}>
               <PText>
-                I am energetic and motivated Web Developer with a have a
-                background in architectural design. I thrive in a team
-                environment, working to get projects done in an efficient
-                manner. Outside the office I could be found cooking recipes I
-                have no business tackling, taking my dog Olive on a hike and
-                dreaming of owning an old fixer-upper.
+                I am energetic and motivated Web Developer with a background in
+                architectural design. I thrive in a team environment, working to
+                get projects done in an efficient manner. Outside the office I
+                could be found cooking recipes I have no business tackling,
+                taking my dog Olive on a hike and dreaming of owning an old
+                fixer-upper.
               </PText>
             </div>
             <div className="slide-in-top">
               <a
                 className="resume_button pulsate-fwd"
-                href="https://drive.google.com/file/d/1O81rkpUgLkD-vsWTrYard7_sdMJLZaRH/view?usp=sharing"
-                target="https://drive.google.com/file/d/1O81rkpUgLkD-vsWTrYard7_sdMJLZaRH/view?usp=sharing"
+                href="https://drive.google.com/file/d/1SPYxy-vlojwuVKFTTKrI0Q3cnY8zC32c/view?usp=sharing"
+                target="https://drive.google.com/file/d/1SPYxy-vlojwuVKFTTKrI0Q3cnY8zC32c/view?usp=sharing"
               >
                 Link to Resume
               </a>

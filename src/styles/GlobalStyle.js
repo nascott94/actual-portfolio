@@ -14,11 +14,14 @@ const GlobalStyles = createGlobalStyle`
     //   actually light blue
     --deep-dark: #d9e9f4;
 
+
     //   actually darker grey blue
     --gray-1: #436981;
 
+
     //   actually light grey blue
-    --white : #a0becd;
+    --white: #a0becd;
+
   }
   html{
     font-size: 10px;
