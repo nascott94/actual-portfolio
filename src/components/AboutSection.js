@@ -84,7 +84,7 @@ export default function AboutSection() {
           />
           <PText>
             Hi, I'm Natalie! I am energetic and motivated Web Developer with a
-            have a background in architectural design. I am currently located in
+            background in architectural design. I am currently located in
             Denver, CO but am orginally from Daytona Beach, FL.
           </PText>
           <div className="aboutSection__buttons">

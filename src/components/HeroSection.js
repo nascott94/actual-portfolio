@@ -152,7 +152,7 @@ export default function HeroSection() {
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading slide-in-top">
-            <span>Welcome, my name is </span>
+            <span>Hi, my name is </span>
             <span className="hero__name slide-in-top">Natalie Scott </span>
           </h1>
           <div className="hero__img">

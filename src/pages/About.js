@@ -137,8 +137,14 @@ export default function About() {
         <div className="about__info__items">
           <div className="about__info__item">
             <h1 className="about__info__heading">Education</h1>
-            <AboutInfoItem title="College" items={['Furman University']} />
-            <AboutInfoItem title="Coding Camp" items={['Denver University']} />
+            <AboutInfoItem
+              title="College"
+              items={['Furman University', 'Bachelor of Arts']}
+            />
+            <AboutInfoItem
+              title="Coding Boot Camp"
+              items={['Denver University']}
+            />
           </div>
           <div className="about__info__item">
             <h1 className="about__info__heading">Skills</h1>
