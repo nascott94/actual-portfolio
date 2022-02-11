@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import HeroImg from '../assets/images/oliveshapes 1000.png';
+import AboutImg from '../assets/images/heropic.png';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/updated-social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
