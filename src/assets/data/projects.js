@@ -1,7 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import BathBomb from '../images/bathbomb.png';
 import Warehouse from '../images/warehouse.png';
-import SimpleSite from '../images/simplesite2.png';
 import CovidTesting from '../images/covidtesting.png';
 import HealthPortal from '../images/health-portal.png';
 import Beet from '../images/beet.png';
