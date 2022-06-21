@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/oliveshapes 1000.png';
+// import HeroImg from '../assets/images/oliveshapes 1000.png';
 import AboutImg from '../assets/images/heropic.png';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/updated-social-media-arrow.svg';
@@ -153,11 +153,11 @@ export default function HeroSection() {
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading slide-in-top">
-            <span>Hi, my name is </span>
+            {/* <span>Hi, my name is </span> */}
             <span className="hero__name slide-in-top">Natalie Scott </span>
           </h1>
           <div className="hero__img">
-            <img src={HeroImg} alt="olive+me" />
+            <img src={AboutImg} alt="me" />
           </div>
           <div className="hero__info pulsate-fwd">
             <Button btnText="see my projects" btnLink="/projects" />
