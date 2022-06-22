@@ -30,14 +30,14 @@ const projects = [
   {
     id: uuidv4(),
     name: 'BeetJuice Website',
-    desc: 'A website that was made for an event and wedding band, made using React and Styled Components.',
+    desc: 'A website that was made for an event and wedding band, made using React, NextJs and Styled Components.',
     img: Beet,
     link: 'https://www.bookb33tju1c3.com/',
   },
   {
     id: uuidv4(),
     name: 'Covid Testing',
-    desc: 'A site made for a covid testing business, made using React and NextJs.',
+    desc: 'A site made for a covid testing business, made using React, Styled Components and NextJs.',
     img: CovidTesting,
     link: 'https://covidsitedanandnat.netlify.app',
   },
