@@ -123,8 +123,8 @@ export default function About() {
             <div className="slide-in-top">
               <a
                 className="resume_button pulsate-fwd"
-                href="https://drive.google.com/file/d/1SPYxy-vlojwuVKFTTKrI0Q3cnY8zC32c/view?usp=sharing"
-                target="https://drive.google.com/file/d/1SPYxy-vlojwuVKFTTKrI0Q3cnY8zC32c/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Em_hcPvT_cJhDGFtsIsx_7qYSeEozluH/view?usp=sharing"
+                target="https://drive.google.com/file/d/1Em_hcPvT_cJhDGFtsIsx_7qYSeEozluH/view?usp=sharing"
               >
                 Link to Resume
               </a>
