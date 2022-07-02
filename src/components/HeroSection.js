@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 // import HeroImg from '../assets/images/oliveshapes 1000.png';
 import AboutImg from '../assets/images/heropic.png';
-import Button from './Button';
+// import Button from './Button';
 import SocialMediaArrow from '../assets/images/updated-social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 
@@ -40,6 +40,17 @@ const HeroStyles = styled.div`
   }
   .hero__info {
     margin-top: -18rem;
+
+    .resume_button {
+      font-size: 2.2rem;
+      background-color: ${(props) =>
+        props.outline ? 'transperant' : 'var(--gray-1)'};
+      padding: 0.7rem 2rem;
+      border: 2px solid var(--gray-1);
+      border-radius: 8px;
+      display: inline-block;
+      color: ${(props) => (props.outline ? 'var(--gary-1)' : 'white')};
+    }
   }
   .hero__social,
   .hero_scrollDown {
@@ -111,6 +122,9 @@ const HeroStyles = styled.div`
     }
     .hero__info {
       margin-top: 3rem;
+      .resume_button {
+        font-size: 1.8rem;
+      }
     }
     .hero__social {
       left: 0px;
@@ -160,7 +174,13 @@ export default function HeroSection() {
             <img src={AboutImg} alt="me" />
           </div>
           <div className="hero__info pulsate-fwd">
-            <Button btnText="see my projects" btnLink="/projects" />
+            <a
+              className="resume_button"
+              href="https://drive.google.com/file/d/1Em_hcPvT_cJhDGFtsIsx_7qYSeEozluH/view?usp=sharing"
+              target="https://drive.google.com/file/d/1Em_hcPvT_cJhDGFtsIsx_7qYSeEozluH/view?usp=sharing"
+            >
+              Link to Resume
+            </a>
           </div>
           <div className="hero__social">
             <div className=".hero__social__indicator slide-in-top">
