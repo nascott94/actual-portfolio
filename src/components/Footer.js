@@ -67,9 +67,9 @@ export default function Footer() {
                 path: '/projects',
               },
               {
-                type: 'Link',
+                // type: 'Link',
                 title: 'Contact',
-                path: '/contact',
+                path: 'mailto:nascott94@outlook.com',
               },
             ]}
           />

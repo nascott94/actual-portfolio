@@ -117,7 +117,8 @@ export default function About() {
                 get projects done in an efficient manner. Outside the office I
                 could be found cooking recipes I have no business tackling,
                 taking my dog Olive on a hike and dreaming of owning an old
-                fixer-upper.
+                fixer-upper. I can be contacted by email at{' '}
+                <a href="mailto:nascott94@outlook.com">nascott94@outlook</a>.
               </PText>
             </div>
             <div className="slide-in-top">
@@ -149,13 +150,27 @@ export default function About() {
           <div className="about__info__item">
             <h1 className="about__info__heading">Skills</h1>
             <AboutInfoItem
-              title="FrontEnd"
-              items={['HTML', 'CSS', 'JavaScript', 'React']}
+              title="Languages"
+              items={['HTML', 'CSS', 'JavaScript', 'SQL', 'PHP', 'Liquid']}
             />
-            <AboutInfoItem title="BackEnd" items={['Node', 'Express', 'SQL']} />
+            <AboutInfoItem
+              title="Applications"
+              items={['GitHub', 'MongoDB', 'MySQL']}
+            />
+            <AboutInfoItem
+              title="Tools"
+              items={[
+                'Express',
+                'React',
+                'Node',
+                'NextJS',
+                'Query',
+                'Bootstrap',
+              ]}
+            />
             <AboutInfoItem
               title="Design"
-              items={['Photoshop', 'SketchUp', 'Revit', 'VRAY']}
+              items={['Photoshop', 'Procreate', 'SketchUp', 'Revit', 'VRAY']}
             />
           </div>
         </div>

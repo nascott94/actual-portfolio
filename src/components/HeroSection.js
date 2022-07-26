@@ -30,6 +30,7 @@ const HeroStyles = styled.div`
       font-family: 'Montserrat SemiBold';
       font-size: 7rem;
       color: var(--white);
+      margin-left: -2rem;
     }
   }
   .hero__img {

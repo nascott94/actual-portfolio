@@ -85,7 +85,9 @@ export default function AboutSection() {
           <PText>
             Hi, I'm Natalie! I am energetic and motivated Web Developer with a
             background in architectural design. I am currently located in
-            Denver, CO but am orginally from Daytona Beach, FL.
+            Denver, CO but am orginally from Daytona Beach, FL. I can be
+            contacted by email at{' '}
+            <a href="mailto:nascott94@outlook.com">nascott94@outlook</a>.
           </PText>
           <div className="aboutSection__buttons">
             <div className="pulsate-fwd">
