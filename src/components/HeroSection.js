@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 // import HeroImg from '../assets/images/oliveshapes 1000.png';
-import AboutImg from '../assets/images/heropic.png';
+import AboutImg from '../assets/images/pic2.jpg';
 // import Button from './Button';
 import SocialMediaArrow from '../assets/images/updated-social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
@@ -31,12 +31,13 @@ const HeroStyles = styled.div`
       font-size: 7rem;
       color: var(--white);
       margin-left: -2rem;
+      padding-bottom: 80px;
     }
   }
   .hero__img {
     max-width: 750px;
-    width: 100%;
-    height: 800px;
+    width: 500px;
+    height: 700px;
     margin: 0 auto;
   }
   .hero__info {
